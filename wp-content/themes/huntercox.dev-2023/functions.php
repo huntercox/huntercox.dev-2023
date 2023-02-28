@@ -1,4 +1,9 @@
 <?php
+// Main functions.php file of theme
 
-/* Enqueue default theme stylesheet */
-wp_enqueue_style('hcdev2023-theme', 'style.css');
+/* WordPress */
+require get_template_directory() . '/functions/wp/remove-comments.php';
+
+
+/* Enqueues */
+require get_template_directory() . '/functions/base/enqueues.php';
