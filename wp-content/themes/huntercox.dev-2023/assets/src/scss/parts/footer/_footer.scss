@@ -1,0 +1,16 @@
+.footer {
+	background-color: $color1;
+	padding: 12px 0 10px 0;
+	text-align: center;
+
+	a {
+		font-family: $monoid_bold;
+	}
+	.icon {
+		margin-left: 3px;
+	}
+	&__year {
+		font-size: 10px;
+		line-height: 0.95;
+	}
+}

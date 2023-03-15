@@ -1,0 +1,36 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: none;
+
+	@media (min-width: 768px) {
+		max-width: 760px;
+	}
+	@media (min-width: 992px) {
+		max-width: 960px;
+	}
+	@media (min-width: 1200px) {
+		max-width: 1100px;
+	}
+}
+
+.icon {
+	font-family: $icon_font;
+}
+
+.button {
+	background-color: $green;
+	border-radius: 4px;
+	border: 1px solid $dark-purple;
+	padding: 11px 14px 8px 14px;
+	color: $dark-purple;
+	font-size: 12px;
+	font-family: $bold;
+
+	&:hover {
+		background-color: $dark-purple;
+		color: $white;
+	}
+}

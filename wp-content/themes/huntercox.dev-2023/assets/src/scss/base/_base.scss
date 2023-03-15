@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100vh;
+	overflow: auto;
+
+	&::selection {
+		color: $dark-purple;
+		background-color: $green;
+	}
+}
+body {
+	height: 100%;
+}
+
+#site {
+	display: grid;
+	height: 100%;
+	grid-template-rows: 48px 1fr 40px;
+}
+
+@import 'text';
+@import 'utility';
+@import 'forms';

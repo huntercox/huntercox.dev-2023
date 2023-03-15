@@ -1,0 +1,70 @@
+* {
+	font-size: 12px;
+	font-family: $font;
+	color: $dark-purple;
+	line-height: 1;
+	vertical-align: bottom;
+}
+
+// Paragraphs
+p {
+	line-height: 1.45;
+	letter-spacing: -0.5px;
+}
+
+// Links
+a,
+a:visited,
+a:active {
+	color: $color2;
+	font-family: $monoid_italic;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// Lists
+ul,
+ol {
+	li {}
+}
+
+// Headings
+h1 {
+	font-weight: normal;
+	font-family: $font;
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-weight: bold;
+	font-family: $bold;
+	font-size: 2rem;
+}
+
+h3 {
+	font-weight: bold;
+	font-family: $bold;
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-weight: normal;
+	font-family: $italic;
+	font-style: italic;
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: $bold;
+}
+h6 {
+	font-weight: normal;
+	font-family: $font;
+	font-size: 14px;
+	text-transform: uppercase;
+}

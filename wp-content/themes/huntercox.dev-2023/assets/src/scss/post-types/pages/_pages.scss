@@ -1,0 +1,20 @@
+.page {
+	&__header {
+		padding: 3rem 0 1rem 0;
+		border-bottom: 2px solid $dark-purple;
+		margin-bottom: 3rem;
+	}
+	&__content {
+		font-size: 14px;
+		margin-bottom: 4rem;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+
+}
+
+@import 'home';
+@import 'contact';
