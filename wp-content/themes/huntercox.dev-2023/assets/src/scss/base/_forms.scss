@@ -30,8 +30,8 @@ textarea {
 		line-height: 1;
 
 		&::selection {
-			color: $dark-purple;
-			background-color: $green;
+			color: $blue;
+			background-color: $pink;
 		}
 	}
 	.gfield_label {
@@ -46,7 +46,7 @@ textarea {
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			margin-bottom: 3px;
-			color: $dark-purple;
+			color: $blue;
 		}
 		.gfield_description {
 			display: none;

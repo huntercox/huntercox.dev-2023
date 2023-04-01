@@ -1,0 +1,23 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td,
+th {
+	border: 1px solid $pink;
+	padding: 10px 10px 8px 10px;
+}
+th {
+	background-color: $pink;
+	color: $blue;
+	font-weight: 800;
+	font-size: 1.2rem;
+	border-right-color: $blue;
+
+	&:last-child {
+		border-right-color: $pink;
+	}
+}
+td {
+	color: $white;
+}

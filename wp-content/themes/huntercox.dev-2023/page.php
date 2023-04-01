@@ -2,15 +2,26 @@
 get_header();
 
 ?>
-<main class="page">
-	<div class="container">
-		<div class="page__header">
-			<?php the_title('<h1 class="page__title">', '</h1>'); ?>
+<div class="page">
+	<div class="page__header">
+		<div class="container">
+			<div class="page__header--inner">
+				<?php
+				if (is_admin()) {
+					the_title('<h1 class="page__title">', '</h1> (page)');
+				} else {
+					the_title('<h1 class="page__title">', '</h1>');
+				}
+				?>
+			</div>
 		</div>
-		<div class="page__content">
+	</div>
+	<div class="page__content">
+		<div class="container">
 			<?php the_content(); ?>
 		</div>
 	</div>
-</main>
+</div>
+
 <?php
 get_footer();

@@ -1,7 +1,6 @@
 * {
-	font-size: 12px;
-	font-family: $font;
-	color: $dark-purple;
+	font-size: 16px;
+	font-family: $font-family;
 	line-height: 1;
 	vertical-align: bottom;
 }
@@ -16,8 +15,8 @@ p {
 a,
 a:visited,
 a:active {
-	color: $color2;
-	font-family: $monoid_italic;
+	color: $white;
+	font-family: $font-family;
 	text-decoration: none;
 
 	&:hover {
@@ -31,28 +30,56 @@ ol {
 	li {}
 }
 
+// Bold
+strong,
+b {
+	font-family: $font-family;
+	font-weight: bold;
+}
+
 // Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.4;
+}
 h1 {
 	font-weight: normal;
-	font-family: $font;
+	font-family: $font-family;
 	font-size: 2.8rem;
+	font-weight: 800;
+	color: $pink;
+	text-shadow: 0.5px 0.5px 0px $white;
+	border-bottom: 1px solid $white;
+	margin-bottom: 15px;
+
+	&.page__title {
+		font-size: 4.2rem;
+		color: $blue;
+		text-shadow: 1px 1px 0px $pink;
+		border-bottom: none;
+		margin-bottom: 0;
+	}
 }
 
 h2 {
 	font-weight: bold;
-	font-family: $bold;
+	font-family: $font-family;
 	font-size: 2rem;
 }
 
 h3 {
 	font-weight: bold;
-	font-family: $bold;
+	font-family: $font-family;
 	font-size: 1.6rem;
 }
 
 h4 {
 	font-weight: normal;
-	font-family: $italic;
+	font-family: $light;
 	font-style: italic;
 	font-size: 18px;
 }
@@ -60,11 +87,11 @@ h4 {
 h5 {
 	font-size: 16px;
 	font-weight: bold;
-	font-family: $bold;
+	font-family: $font-family;
 }
 h6 {
 	font-weight: normal;
-	font-family: $font;
+	font-family: $font-family;
 	font-size: 14px;
 	text-transform: uppercase;
 }

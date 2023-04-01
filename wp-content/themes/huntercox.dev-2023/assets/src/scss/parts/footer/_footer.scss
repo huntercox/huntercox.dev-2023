@@ -1,10 +1,11 @@
 .footer {
-	background-color: $color1;
+	background-color: $pink;
 	padding: 12px 0 10px 0;
 	text-align: center;
+	margin-top: 40px;
 
 	a {
-		font-family: $monoid_bold;
+		font-family: $font-family;
 	}
 	.icon {
 		margin-left: 3px;
