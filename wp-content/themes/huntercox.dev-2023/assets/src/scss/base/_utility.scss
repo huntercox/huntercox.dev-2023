@@ -21,16 +21,16 @@
 }
 
 .button {
-	background-color: $pink;
+	background-color: $green;
 	border-radius: 4px;
-	border: 1px solid $blue;
+	border: 1px solid $dark;
 	padding: 11px 14px 8px 14px;
-	color: $blue;
+	color: $dark;
 	font-size: 12px;
 	font-family: $font-family;
 
 	&:hover {
-		background-color: $blue;
+		background-color: $dark;
 		color: $white;
 	}
 }
@@ -38,13 +38,19 @@
 .shadow-button {
 	/* Basic box-shadow */
 	padding: 11px 16px 6px 16px;
-	background-color: $blue;
+	background-color: $dark;
 	box-shadow: 4px 4px 0px $white;
 	font-weight: normal;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 
 	&:hover {
-		box-shadow: 4px 4px 0px $yellow;
+		box-shadow: 4px 4px 0px $green;
 	}
+}
+
+/* Parallax */
+.parallax-window {
+	min-height: 200px;
+	background: transparent;
 }

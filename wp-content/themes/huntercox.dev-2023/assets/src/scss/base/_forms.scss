@@ -1,9 +1,22 @@
 input,
 textarea {
 	padding-top: 4px;
+	background-color: $dark;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border: 1px solid $green;
+	border-radius: 3px;
+	text-transform: uppercase;
+	color: $white;
+
+	&::selection {
+		background-color: $pink;
+	}
 
 	&:focus {
-		border-color: $purple;
+		border-color: lighten($green, 10%);
+		box-shadow: 0 0 1px $green, 0 0 2px $green, 0 0 3px $green;
 		outline: none;
 	}
 }
@@ -30,8 +43,8 @@ textarea {
 		line-height: 1;
 
 		&::selection {
-			color: $blue;
-			background-color: $pink;
+			color: $dark;
+			background-color: $green;
 		}
 	}
 	.gfield_label {
@@ -46,7 +59,7 @@ textarea {
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			margin-bottom: 3px;
-			color: $blue;
+			color: $dark;
 		}
 		.gfield_description {
 			display: none;

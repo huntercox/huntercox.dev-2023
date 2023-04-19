@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-<div class="post">
+<div class="container">
 	<div class="post__header">
 		<?php the_title('<h1 class="post__title">', '</h1>'); ?>
 	</div>

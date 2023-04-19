@@ -4,18 +4,20 @@
 	box-sizing: border-box;
 }
 *::selection {
-	color: $blue;
-	background-color: rgba($white, 80%);
+	color: $indigo;
+	background-color: rgba($pink, 80%);
 }
 html {
-	background-color: $blue;
-	color: $pink;
+	background-color: $background_color;
+	color: $green;
 }
 body,
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure,
 blockquote,
@@ -24,13 +26,21 @@ dd {
 	margin: 0;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+html,
+body {
+	height: 100dvh;
+}
 #site {
 	display: grid;
 	height: 100%;
-	margin-top: 1rem;
+	padding-top: 1rem;
 	grid-template-rows: auto 1fr auto;
-	background-color: $blue;
-	background: linear-gradient(45deg, $blue 60%, $purple 100%);
 }
 
 @import 'text';

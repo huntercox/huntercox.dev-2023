@@ -9,7 +9,7 @@
 			$site_name = get_bloginfo();
 			echo '<a href="' . esc_url($site_url) . '">' . $site_name . '</a>';
 			?>
-			<span class="icon"> fa-copyright</span>
+			<span class="icon"><i class="fa-solid fa-copyright"></i></span>
 			<span class="footer__year"><?php echo date('Y'); ?></span>
 		</div>
 	</div>
@@ -17,7 +17,7 @@
 
 <?php wp_footer(); ?>
 
-</div><!-- #site -->
+</div>
 </body>
 
 </html>

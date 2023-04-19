@@ -6,36 +6,6 @@
 		&--inner {
 			position: relative;
 			z-index: 1;
-
-
-			h1 {
-				width: 90%;
-				z-index: 2;
-				background-color: $white;
-				padding: 0.8rem 2rem 0.8rem 0;
-				box-shadow: 8px 8px $blue;
-
-				&::after {
-					content: "{.page__title}";
-					font-size: 14px;
-					color: $blue;
-					position: absolute;
-					top: 30%;
-				}
-			}
-
-			&::before {
-				content: "";
-				background-color: $white;
-				height: 100%;
-				width: 100%;
-				top: 0;
-				right: auto;
-				left: -25%;
-				position: absolute;
-				z-index: -1;
-			}
-
 		}
 	}
 	&__content {
@@ -51,3 +21,5 @@
 
 @import 'home';
 @import 'contact';
+@import 'resume';
+@import 'styles';

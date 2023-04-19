@@ -47,3 +47,16 @@
 		</header>
 
 		<main class="content">
+			<?php
+			if (!is_front_page()) :
+				echo '<div class="page__header">';
+				echo '<div class="container">';
+				/* Breadcrumbs */
+				custom_page_breadcrumbs();
+
+				/* Page Title */
+				the_title('<h1 class="page__title">', '</h1>');
+				echo '</div>';
+				echo '</div>';
+			endif;
+			?>
