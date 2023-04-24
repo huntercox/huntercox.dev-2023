@@ -5,23 +5,40 @@
  */
 get_header();
 ?>
-<?php if (have_rows('flex_layouts')) : ?>
-	<?php while (have_rows('flex_layouts')) : the_row(); ?>
-		<?php if (get_row_layout() == 'hero') : ?>
-			<?php
-			$image = get_sub_field('image');
-			$size = 'flex-hero';
-			if ($image) :
-				$img_src = wp_get_attachment_image_src($image, $size);
-				echo '<div class="hero">';
-				echo '<div class="parallax-window" data-bleed="10"  data-image-src="' . $img_src[0] . '" data-parallax="scroll" data-natural-width="1000" data-natural-height="300"></div>';
-				echo '</div>';
-			endif;
-			?>
-		<?php elseif (get_row_layout() == 'content') : ?>
-			<?php the_sub_field('visual_editor'); ?>
-		<?php endif; ?>
-	<?php endwhile; ?>
-<?php endif; ?>
+
+<?php
+
+// Get Flexible Content functions
+require get_template_directory() . '/functions/acf/flexible-content.php';
+
+
+if (have_rows('flex_layouts')) :
+	while (have_rows('flex_layouts')) : the_row();
+
+		echo '<section class="flex-layout layout--' . get_row_layout() . '">';
+
+		if (get_row_layout() == 'hero') :
+			/* HERO */
+			get_template_part('templates/flexible-content/hero');
+
+		elseif (get_row_layout() == 'basic_content') :
+			/* BASIC CONTENT */
+			get_template_part('templates/flexible-content/content', 'basic');
+
+		elseif (get_row_layout() == 'advanced_content') :
+			/* ADVANCED CONTENT */
+			get_template_part('templates/flexible-content/content', 'advanced');
+
+		elseif (get_row_layout() == 'section_heading') :
+			/* SECTION HEADING */
+			get_template_part('templates/flexible-content/section-heading');
+
+		endif;
+		echo '</section>';
+
+	endwhile;
+endif;
+?>
+
 <?php
 get_footer();

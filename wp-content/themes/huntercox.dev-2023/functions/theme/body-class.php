@@ -1,5 +1,5 @@
 <?php
-add_filter('body_class', 'custom_body_class');
+add_filter('body_class', 'hsc_custom_body_class');
 /**
  * Add custom field body class(es) to the body classes.
  *
@@ -8,7 +8,7 @@ add_filter('body_class', 'custom_body_class');
  * @param array $classes Existing body classes.
  * @return array Amended body classes.
  */
-function custom_body_class(array $classes)
+function hsc_custom_body_class(array $classes)
 {
 	$new_class = is_page() ? get_post_meta(get_the_ID(), 'body_class', true) : null;
 
