@@ -67,3 +67,5 @@ Thumbs.db
 !CHANGELOG.md
 !composer.json
 !.env
+
+!/wp-content/themes/huntercox.dev-theme-2023
