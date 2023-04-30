@@ -68,6 +68,6 @@ Thumbs.db
 !composer.json
 !.env
 
-!/wp-content/themes/huntercox.dev-theme-2023/
-!/wp-content/themes/huntercox.dev-theme-2023/*
+# submodule
+!/wp-content/themes/huntercox.dev-theme-2023
 
