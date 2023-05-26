@@ -32,6 +32,11 @@
 		}
 	],
 	"extra": {
+		"dropin-paths": {
+			"wp-content/": [
+				"package:aaemnnosttv/wp-sqlite-db:src/db.php"
+			]
+		},
 		"installer-paths": {
 			"wp-content/plugins/{$name}/": [
 				"type:wordpress-plugin"
