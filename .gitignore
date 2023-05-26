@@ -55,6 +55,9 @@ Thumbs.db
 *.tar
 *.zip
 
+# MacOS files
+.DS_Store
+
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
@@ -70,4 +73,3 @@ Thumbs.db
 
 # submodule
 !/wp-content/themes/huntercox.dev-theme-2023
-
