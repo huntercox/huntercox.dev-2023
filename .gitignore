@@ -55,8 +55,11 @@ Thumbs.db
 *.tar
 *.zip
 
-# MacOS files
+# ignore MacOS hidden files
 .DS_Store
+
+# ignore .env files containing sensitive information
+.env
 
 # -------------------------
 # BEGIN Whitelisted Files
@@ -69,7 +72,7 @@ Thumbs.db
 !README.md
 !CHANGELOG.md
 !composer.json
-!.env
+
 
 # submodule
 !/wp-content/themes/huntercox.dev-theme-2023
