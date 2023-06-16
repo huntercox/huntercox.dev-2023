@@ -7,7 +7,8 @@
 		"ffraenz/private-composer-installer": "^5.0",
 		"wpackagist-plugin/classic-editor": "^1.6.3",
 		"advanced-custom-fields/advanced-custom-fields-pro": "*",
-		"huntercox/huntercox.dev-theme-2023": "dev-main"
+		"huntercox/huntercox.dev-theme-2023": "dev-main",
+		"johnpbloch/wordpress": "^5.8"
 	},
 	"repositories": [
 		{
@@ -32,12 +33,10 @@
 		}
 	],
 	"extra": {
-		"dropin-paths": {
-			"wp-content/": [
-				"package:aaemnnosttv/wp-sqlite-db:src/db.php"
-			]
-		},
 		"installer-paths": {
+			"wp/": [
+				"johnpbloch/wordpress"
+			],
 			"wp-content/plugins/{$name}/": [
 				"type:wordpress-plugin"
 			],
